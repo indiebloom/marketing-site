@@ -1,0 +1,37 @@
+---
+const { invert } = Astro.props
+---
+
+<div class="relative">
+  {
+    invert ? (
+      <div class="tile-before absolute inset-0 z-0 rounded-2xl border-4 border-neutral-700 bg-primary-300 content-none" />
+    ) : (
+      <div class="tile-before absolute inset-0 z-0 rounded-2xl border-4 border-neutral-700 bg-neutral-100 content-none dark:bg-dark-100" />
+    )
+  }
+  {
+    invert ? (
+      <div class="relative z-10 text-neutral-100">
+        <slot />
+      </div>
+    ) : (
+      <div class="relative z-10">
+        <slot />
+      </div>
+    )
+  }
+  {
+    invert ? (
+      <div class="absolute inset-0 -z-10 translate-x-4 translate-y-4 rounded-xl bg-neutral-300 content-none dark:bg-neutral-700" />
+    ) : (
+      <div class="absolute inset-0 -z-10 translate-x-4 translate-y-4 rounded-xl bg-primary-300 content-none dark:bg-primary-200" />
+    )
+  }
+</div>
+
+<style lang="scss">
+  .tile-before {
+    box-shadow: 6px 6px 0px 0px var(--background);
+  }
+</style>

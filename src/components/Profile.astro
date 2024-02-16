@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets'
+import linkedInLogo from '../assets/img/linked-in-logo.png'
+const { imgUrl, personName, personTitle, linkedInUrl } = Astro.props
+---
+
+<div class="flex flex-col items-center gap-2">
+  <div>
+    <Image class="w-48 rounded-full" src={imgUrl} alt={`${personName}, ${personTitle}`} />
+  </div>
+  <div>
+    <p class="bold text-center text-2xl">
+      {personName}
+    </p>
+    <p class="text-center text-xl font-extralight">{personTitle}</p>
+  </div>
+  {
+    linkedInUrl && (
+      <a href={linkedInUrl}>
+        <Image class="h-4 w-auto" src={linkedInLogo} alt="LinkedIn Logo" />
+      </a>
+    )
+  }
+</div>

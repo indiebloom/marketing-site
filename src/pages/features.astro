@@ -1,0 +1,24 @@
+---
+import Feature from '../components/Feature.astro'
+import SectionHeading from '../components/SectionHeading.astro'
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+---
+
+<DefaultLayout>
+  <div class="container">
+    <SectionHeading text="Features" />
+    <div class="mb-8 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+      <Feature icon="mdi:calendar-range" title="Flexible Plans">
+        Specify date ranges or rough repeating schedules for flexible tasks, and spend less energy picking and tweaking
+        exact dates.
+      </Feature>
+      <Feature icon="mdi:chart-bar-stacked" title="Auto-Planning">
+        Set your preferred workload balance over the days of the week, and let our autoplanner take care of picking plan
+        dates for your flexible tasks to align with your preferences.
+      </Feature>
+      <Feature icon="mdi:chat" title="Natural Language">
+        Type or speak in natural language to specify your task's plans, add steps, set effort, and more!
+      </Feature>
+    </div>
+  </div>
+</DefaultLayout>

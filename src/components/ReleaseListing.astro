@@ -1,0 +1,14 @@
+---
+const { url, title, date } = Astro.props
+---
+
+<div>
+  <li>
+    <div>
+      <h4>
+        <a href={url}>{title}</a>
+      </h4>
+      <h5>{date.slice(0, 10)}</h5>
+    </div>
+  </li>
+</div>

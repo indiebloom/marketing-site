@@ -1,0 +1,19 @@
+---
+import ReleaseListing from '../../components/ReleaseListing.astro'
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+const allReleases = await Astro.glob('./*.mdx')
+---
+
+<DefaultLayout title="Releases">
+  <div class="container">
+    <h2>Releases</h2>
+
+    <ul class="list-none">
+      {
+        allReleases.map((release) => (
+          <ReleaseListing url={release.url} {...release.frontmatter} key={release.frontmatter.title} />
+        ))
+      }
+    </ul>
+  </div>
+</DefaultLayout>

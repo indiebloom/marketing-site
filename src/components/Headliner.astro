@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets'
+import Tile from './Tile.astro'
+
+const { img, lightModeImg, darkModeImg } = Astro.props
+const lightModeImage = lightModeImg ?? img
+const darkModeImage = darkModeImg ?? img
+---
+
+<div class="relative">
+  <div class="absolute left-4 right-12 top-16 z-10 md:left-auto md:right-0 md:top-1/2 md:w-1/2 md:-translate-y-1/2">
+    <Tile>
+      <slot />
+    </Tile>
+  </div>
+
+  <Image src={lightModeImage} alt="Image" class="h-auto w-full dark:hidden md:w-2/3" />
+  <Image src={darkModeImage} alt="Image" class="hidden h-auto w-full dark:block md:w-2/3" />
+</div>
+
+<style lang="scss">
+  .headliner-before {
+    box-shadow: 6px 6px 0px 0px var(--background);
+  }
+</style>

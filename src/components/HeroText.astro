@@ -1,0 +1,15 @@
+---
+const { text, secondary } = Astro.props
+---
+
+{
+  secondary ? (
+    <span class="bg-gradient-to-r from-secondary-300 to-secondary-400 bg-clip-text text-transparent dark:from-secondary-200 dark:to-secondary-300">
+      {text}
+    </span>
+  ) : (
+    <span class="inline bg-gradient-to-r from-primary-200 to-primary-400 bg-clip-text font-extrabold text-transparent dark:from-primary-100 dark:to-primary-300">
+      {text}
+    </span>
+  )
+}
