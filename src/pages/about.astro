@@ -8,6 +8,7 @@ import Headliner from '../components/Headliner.astro'
 import HeroText from '../components/HeroText.astro'
 import Profile from '../components/Profile.astro'
 import SectionHeading from '../components/SectionHeading.astro'
+import Tile from '../components/Tile.astro'
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 ---
 
@@ -28,6 +29,30 @@ import DefaultLayout from '../layouts/DefaultLayout.astro'
           </h3>
         </div>
       </Headliner>
+    </div>
+  </section>
+  <section class="my-8">
+    <div class="container">
+      <div class="grid grid-cols-1 gap-12 py-8 md:grid-cols-2">
+        <Tile invert>
+          <div class="flex flex-col gap-8 p-8">
+            <h3 class="text-4xl font-extrabold">Inspired by Neurodiversity</h3>
+            <p>
+              Built by and for neurodivergent individuals, Indie Bloom is designed to help you reduce the background
+              stress of daily life so that you have more energy for what matters to you.
+            </p>
+          </div>
+        </Tile>
+        <Tile invert>
+          <div class="flex flex-col gap-8 p-8">
+            <h3 class="text-4xl font-extrabold line-through">Get Stuff Done</h3>
+            <p>
+              We put peace-of-mind ahead of productivity. Indie Bloom meets you where you are, with empathetic coaching
+              to help you find small wins and build confidence.
+            </p>
+          </div>
+        </Tile>
+      </div>
     </div>
   </section>
   <section class="my-8">
