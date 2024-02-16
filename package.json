@@ -34,8 +34,5 @@
   "engines": {
     "node": "20",
     "npm": "^9.8.0"
-  },
-  "dependencies": {
-    "sharp": "^0.32"
   }
 }
