@@ -5,9 +5,16 @@ const currentYear = new Date().getFullYear()
 <footer>
   <section class="py-8">
     <div class="container">
-      <p>
-        &copy; {currentYear} - Indie Bloom Inc.
-      </p>
+      <div class="grid grid-cols-1 md:grid-cols-[22ch_auto_22ch]">
+        <p class="text-center md:text-left">
+          &copy; {currentYear} - Indie Bloom Inc.
+        </p>
+        <div class="text-center">
+          <a href="/privacy">Privacy</a>&nbsp;|&nbsp;<a href="/terms">Terms</a>
+        </div>
+
+        <a href="mailto:indiebloom@googlegroups.com" class="text-center md:text-right">Contact Us</a>
+      </div>
     </div>
   </section>
 </footer>
