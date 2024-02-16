@@ -1,4 +1,18 @@
-# Accessible Astro Starter
+# Indie Bloom Marketing Site
+
+## 🚀 Getting started
+
+Clone this repo locally and run any of the following commands in your terminal:
+
+| Command           | Action                                       |
+| :---------------- | :------------------------------------------- |
+| `npm install`     | Installs dependencies                        |
+| `npm run dev`     | Starts local dev server at `localhost:4321`  |
+| `npm run build`   | Build your production site to `./dist/`      |
+| `npm run preview` | Preview your build locally, before deploying |
+
+
+# Based on: Accessible Astro Starter
 
 ![social-preview-image](https://user-images.githubusercontent.com/3909046/219942674-9894853e-def8-4180-84b8-6b577dacfcaa.png)
 
@@ -33,16 +47,7 @@ Accessible Astro Starter is a ready to use, SEO and a11y friendly blogging theme
 - A collection of utility classes such as breakpoints, button classes, font settings, resets and outlines in `src/assets/scss/base`
 - View Transitions (⚠️ see [astro-docs](https://docs.astro.build/en/guides/view-transitions/#accessibility) for accessibility considerations)
 
-## 🚀 Getting started
 
-Clone this theme locally and run any of the following commands in your terminal:
-
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:4321`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
 
 ## 📦 Other Accessible Astro projects
 
@@ -58,8 +63,3 @@ If you find that something isn't working right then I'm always happy to hear it 
 3. [Starting a discussion](https://github.com/markteekman/accessible-astro-starter/discussions)
 4. [Buying me a coffee!](https://www.buymeacoffee.com/markteekman)
 
-## ☕ Thank you!
-
-A big thank you to the creators of the awesome Astro static site generator and to all using this starter to make the web a bit more accessible for all people around the world :)
-
-[![buymeacoffee-button](https://user-images.githubusercontent.com/3909046/150683481-be070424-7bb0-4dd7-a3cb-43b5605163f5.png)](https://www.buymeacoffee.com/markteekman)
