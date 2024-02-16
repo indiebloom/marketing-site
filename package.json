@@ -1,9 +1,8 @@
 {
-  "name": "accessible-astro-starter",
-  "description": "An Accessible Starter Theme for Astro including several accessibility features and tools to help you build faster.",
-  "version": "3.1.2",
-  "author": "Mark Teekman",
-  "homepage": "https://accessible-astro.netlify.app/",
+  "name": "indie-bloom-marketing-site",
+  "description": "The public marketing site for Indie Bloom Inc.",
+  "version": "1.0.0",
+  "author": "Indie Bloom Inc.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -11,25 +10,29 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^2.0.2",
+    "@astrojs/mdx": "^2.1.1",
     "@astrojs/partytown": "^2.0.2",
     "@astrojs/tailwind": "^5.0.4",
     "@iconify-json/ion": "^1.1.15",
     "@iconify-json/mdi": "^1.1.64",
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
-    "@typescript-eslint/parser": "^5.50.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
     "accessible-astro-components": "^2.3.5",
-    "astro": "^4.0.7",
-    "astro-compress": "^2.0.6",
-    "astro-icon": "^1.0.2",
+    "astro": "^4.4.0",
+    "astro-compress": "^2.2.10",
+    "astro-icon": "^1.1.0",
     "eslint": "^8.33.0",
-    "eslint-plugin-astro": "^0.23.0",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "prettier": "^2.8.3",
+    "eslint-plugin-astro": "^0.31.4",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.8.0",
     "prettier-plugin-tailwindcss": "^0.2.2",
-    "sass": "^1.49.9",
+    "sass": "^1.71.0",
     "svgo": "^3.2.0",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.4.1"
+  },
+  "engines": {
+    "node": "20",
+    "npm": "^9.8.0"
   }
 }
