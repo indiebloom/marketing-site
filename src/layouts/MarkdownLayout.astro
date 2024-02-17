@@ -1,4 +1,6 @@
 ---
+import '@fontsource/space-mono/400.css'
+import '@fontsource/space-mono/700.css'
 import DefaultLayout from './DefaultLayout.astro'
 
 const { frontmatter } = Astro.props
@@ -6,8 +8,9 @@ const { frontmatter } = Astro.props
 
 <DefaultLayout title={frontmatter.title}>
   <div class="container">
-    <div class="space-content my-12">
-      <h1>Release {frontmatter.title}</h1>
+    <div class="space-content list-disc font-mono">
+      <h2>{frontmatter.title}</h2>
+      <h3 class="text-2xl font-light">{frontmatter.date.slice(0, 10)}</h3>
       <slot />
     </div>
   </div>

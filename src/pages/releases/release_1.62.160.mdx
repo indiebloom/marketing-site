@@ -1,0 +1,51 @@
+---
+layout: ../../layouts/MarkdownLayout.astro
+title: 1.62.160 - Ecstatic Echinacea
+date: 2024-02-05
+author: Alex Heitzmann
+---
+
+#### Feature Updates
+
+- 🚀 **Improved Todoist import experience**
+  - Supports for more variants of todoist task plans for a more accurate import
+  - Saves your progress during an import so you can leave an import and pick up later where you left off, even on another device.
+  - Keeps track of previously imported tasks so you can re-do an import and only see tasks that were added in Todoist since your last one.
+  - Provides swipe actions to easily increase the flexibility of the imported tasks plans to better take advantage of Indie Bloom auto-planning.
+- 🚀 **Support for starting dates for relative recurrence plans**
+
+  e.g. "Do this thing every 5-10 days starting June 15th"
+
+- 🚀 **New natural language planning phrases**
+
+  - Support for a variety of abbreviations to speed input: "yr," "mo," "wk," "day," "hr," "min," "tod," "tom," "ev," "~"
+  - Specifying a time with "morning," "noon," "afternoon," "evening," or "night," e.g. "Do this thing tomorrow eve"
+  - Shorthand recurrence phrases, e.g. "every morning," "ev Mon," "ev 2 Mondays," "ev weekday," "ev weekend," "ev 12th"
+  - Support planning for a month, e.g. "in June"
+  - "everyday" as an alias for "daily" or "every day"
+
+- ✨ **New natural language phrases for setting time and effort.**
+  Instead of "set effort..." you can set time and effort individually or together with phrases like:
+
+  - "takes 10 min"
+  - "takes unknown time"
+  - "low|average|medium|high effort"
+  - "takes low effort and 10 minutes"
+  - "high effort takes 60 minutes"
+
+- 🚀 **Improved planning slider functionality**
+
+  The planning slider in the task details page now stacks the slider thumbs for the available, planned, and due dates when they overlap so that you can still see and interact with all of them. Additionally, when you drag one thumb past another, instead of the drag switching to moving the second thumb, both will be dragged together.
+
+- 🚀 **Numeric keyboard for task time cost input**
+
+  When you're setting the time cost for a task or template, the keyboard will now default to the numeric keyboard to make it easier to input numbers.
+
+- 🧹 **Removed focus page**
+
+  Focus mode had limited utility without more advanced options for picking the tasks to focus on beyond ability to cycle through available tasks in rough time order. We've got lots of ideas for this feature area, but for now, removing the page to simplify the UX.
+
+#### Bug Fixes
+
+- 🐞 Fixed iOS issue with sliders reverting to their previous state after a drag was completed.
+- 🐞 Automatically create a reminder when a task is created with a specific time-of-day, to align with the behavior when a time-of-day is added to an existing task.

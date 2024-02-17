@@ -3,7 +3,10 @@ import { SkipLinks } from 'accessible-astro-components'
 import Navigation from '../components/Navigation.astro'
 
 const allReleases = await Astro.glob('../pages/releases/*.mdx')
-const latestReleases = allReleases.slice(0, 5)
+// Sorted in descending order by date
+const latestReleases = allReleases
+  .toSorted((r1, r2) => (r1.frontmatter.date > r2.frontmatter.date ? -1 : 1))
+  .slice(0, 5)
 ---
 
 <header>

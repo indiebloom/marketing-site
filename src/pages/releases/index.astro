@@ -2,15 +2,17 @@
 import ReleaseListing from '../../components/ReleaseListing.astro'
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 const allReleases = await Astro.glob('./*.mdx')
+// Sorted in descending order by date
+const sortedReleases = allReleases.toSorted((r1, r2) => (r1.frontmatter.date > r2.frontmatter.date ? -1 : 1))
 ---
 
 <DefaultLayout title="Releases">
   <div class="container">
     <h2>Releases</h2>
 
-    <ul class="list-none">
+    <ul>
       {
-        allReleases.map((release) => (
+        sortedReleases.map((release) => (
           <ReleaseListing url={release.url} {...release.frontmatter} key={release.frontmatter.title} />
         ))
       }

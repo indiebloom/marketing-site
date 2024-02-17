@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
@@ -33,7 +35,12 @@ module.exports = {
         100: 'hsl(30, 3%, 12%)',
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Assistant', ...defaultTheme.fontFamily.sans],
+        mono: ['Space Mono', ...defaultTheme.fontFamily.mono],
+      },
+    },
   },
   plugins: [],
   darkMode: ['class', '.darkmode'],

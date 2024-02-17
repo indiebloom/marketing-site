@@ -35,5 +35,9 @@
   "engines": {
     "node": "20",
     "npm": "^10.2.4"
+  },
+  "dependencies": {
+    "@fontsource/assistant": "^5.0.16",
+    "@fontsource/space-mono": "^5.0.18"
   }
 }

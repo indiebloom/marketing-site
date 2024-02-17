@@ -4,38 +4,6 @@
 
 @use 'breakpoint' as *;
 
-@font-face {
-  font-family: 'Assistant';
-  src: local('Assistant ExtraBold'), local('Assistant-ExtraBold'), url('/fonts/Assistant-ExtraBold.ttf') format('ttf');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Assistant';
-  src: local('Assistant Bold'), local('Assistant-Bold'), url('/fonts/Assistant-Bold.ttf') format('ttf');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Assistant';
-  src: local('Assistant Italic'), local('Assistant-Italic'), url('/fonts/Assistant-Italic.ttf') format('ttf');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Assistant';
-  src: local('Assistant Regular'), local('Assistant-Regular'), url('/fonts/Assistant-Regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
   font-family: var(--font-family-default);
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
