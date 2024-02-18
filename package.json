@@ -37,6 +37,7 @@
     "npm": "^10.2.4"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.0.5",
     "@fontsource/assistant": "^5.0.16",
     "@fontsource/space-mono": "^5.0.18"
   }

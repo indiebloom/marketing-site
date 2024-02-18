@@ -13,7 +13,8 @@ Clone this repo locally and run any of the following commands in your terminal:
 | `npm run format`  | Format all files in the project              |
 
 ## Deploying
-The website is hosted in Firebase project `indie-bloom-marketing`. 
+
+The website is hosted in Firebase project `indie-bloom-marketing`.
 Follow the [Firebase CLI setup instructions](https://firebase.google.com/docs/cli#setup_update_cli). To prepare a release, run `npm run build && npm run preview` and check out the preview on localhost to make sure everything looks ok. When you're satisfied, run `firebase deploy --only hosting` to deploy to production.
 
 # Based on: Accessible Astro Starter

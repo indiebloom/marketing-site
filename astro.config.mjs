@@ -1,8 +1,10 @@
-import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import tailwind from '@astrojs/tailwind'
 import compress from 'astro-compress'
 import icon from 'astro-icon'
+import { defineConfig } from 'astro/config'
+
+import sitemap from '@astrojs/sitemap'
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,6 +16,7 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     compress(),
+    sitemap(),
   ],
-  site: 'https://indie-bloom-marketing.web.app',
+  site: 'https://www.indiebloom.co',
 })
