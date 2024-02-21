@@ -1,0 +1,26 @@
+---
+layout: ../../layouts/MarkdownLayout.astro
+title: 1.63.164 - Gooey Goldenrod
+date: 2024-02-21
+author: Alex Heitzmann
+---
+
+#### Feature Updates
+
+- ✨ **Updated steps editor in the task/template details page**
+
+  The steps editor in the Steps tab for a task or template is now consistent with the steps editor used in various coaching flows.
+
+  - We removed the "Add Step" button. Instead, there is always an empty placeholder step at the end of the list, ready to be filled in.
+  - With a step focused, pressing "Enter" will add a new step immediatly below it.
+  - The aria attributes for the drag handles have been improved to improve accessibility of reordering steps.
+
+- ✨ **Added natural language support for "starting on the \<nth\>"**
+
+  When specifying the starting date for a recurring task plan, you can now use a phrase like "recurs ev week starting the 15th" to make the next task instance's plan begin on the earliest 15th of a month that occurs in the future. (Note: other constructions such as "starting on Wed" and "starting 6/15" were already possible).
+
+#### Bug Fixes
+
+- 🐞 Prevent repetition of tips that were previously dismissed
+- 🐞 Ensure that the Reminders section on the Today page is updated upon app resume
+- 🐞 Fixed issue with new steps being added in the middle of the steps list instead of the end
