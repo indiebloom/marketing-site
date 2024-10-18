@@ -1,11 +1,15 @@
 ---
 import Feature from '../components/Feature.astro'
 import Hero from '../components/Hero.astro'
+import Notice from '../components/Notice.astro'
 import SectionHeading from '../components/SectionHeading.astro'
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 ---
 
 <DefaultLayout title="Home">
+  <Notice>
+    <p>Important Notice: The Indie Bloom app is being discontinued. <a href="winding-down">Read More.</a></p>
+  </Notice>
   <Hero />
   <section class="my-24">
     <div class="container">
