@@ -1,5 +1,4 @@
 ---
-import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
 import multiDeviceHero from '../assets/img/MultideviceHero.png'
 import HeroText from './HeroText.astro'
@@ -15,21 +14,6 @@ import HeroText from './HeroText.astro'
         <h2 class="text-center text-2xl font-light italic md:text-left lg:text-3xl">
           <HeroText text="Peace of mind for everyday life" secondary />
         </h2>
-
-        <div class="flex flex-col gap-3 min-[500px]:flex-row">
-          <a class="button has-icon" href="https://testflight.apple.com/join/dqbu42Lv">
-            <Icon name="ion:logo-apple-appstore" />
-            iOS
-          </a>
-          <a class="button has-icon" href="https://play.google.com/store/apps/details?id=co.indiebloom.app">
-            <Icon name="ion:logo-google-playstore" />
-            Android
-          </a>
-          <a class="button has-icon" href="https://beta.indiebloom.co">
-            <Icon name="ion:globe-outline" />
-            Web
-          </a>
-        </div>
       </div>
       <Image
         class="hidden w-full lg:block"
